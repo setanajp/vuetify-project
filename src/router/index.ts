@@ -1,6 +1,7 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
 import Default from '@/layouts/default/Default.vue'
+import View00 from '@/views/View00.vue'
 import View01 from '@/views/View01.vue'
 import View02 from '@/views/View02.vue'
 import View03 from '@/views/View03.vue'
@@ -12,6 +13,11 @@ const routes = [
     children: [
       {
         path: '',
+        name: 'View00',
+        component: View00,
+      },
+      {
+        path: 'view01',
         name: 'View01',
         component: View01,
       },
